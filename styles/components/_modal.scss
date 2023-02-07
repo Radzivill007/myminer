@@ -1,0 +1,77 @@
+.modal {
+  & .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 564px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 44px 57px;
+    @media(max-width: 1599px){
+        padding: 30px 40px;
+      }
+    @media(max-width: 600px) {
+        width: calc(100% - 20px);
+        margin: 0 auto;
+        padding: 20px 10px;
+    }
+    & .rocket {
+        background-image: url('https://i.ibb.co/CwxgYt3/rocket.png');
+        background-size: cover;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 150px;
+        height: 150px;
+        @media(max-width: 600px){
+            width: 75px;
+            height: 75px;
+        }
+    }
+    & h3 {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 59px;
+      letter-spacing: -0.0133em;
+      color: #232323;
+      text-align: center;
+      margin-bottom: 35px;
+      @media(max-width: 1599px){
+        font-size: 38px;
+        margin-bottom: 30px;
+      }
+      @media(max-width: 600px){
+        font-size: 30px;
+        margin-bottom: 0px;
+      }
+    }
+    & .close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      background-color: transparent;
+      border: 0;
+      outline: 0;
+      cursor: url("https://i.ibb.co/Pt29f40/pointer.png"), auto;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        transform-origin: center center;
+        background-color: #4181f0;
+        width: 30px;
+        height: 2px;
+      }
+      &::after {
+        transform: translate(-50%, -50%) rotate(45deg);
+        background-color: #7f55f5;
+      }
+    }
+  }
+}

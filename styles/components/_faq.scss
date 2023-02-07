@@ -1,0 +1,38 @@
+.faq {
+    padding: 70px 100px;
+    @media (max-width:900px) {
+        padding: 50px 0;
+    }
+    & .myaccordion {
+        box-shadow: 8px 8px 24px rgba(9, 13, 20, 0.06);
+        border-radius: 50px;
+        max-width: 1000px;
+        margin: auto;
+        transition: all 0.3s ease-in-out;
+        & .quest {
+          display: flex;
+          align-items: center;
+            & > span {
+                flex-shrink: 0;
+                width: 40px;
+                height: 40px;
+                & > img {
+                    width: 40px;
+                    height: 40px; 
+                    min-height: auto !important;
+                }
+            }
+            & > p {
+                margin-left: 20px;
+                font-weight: 500;
+            }
+        }
+        & .answer {
+            margin-left: 60px;
+        }
+        & img {
+            width: 40px !important;
+            height: 40px !important;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  & label {
+    position: relative;
+    letter-spacing: normal;
+    display: block;
+    padding-left: 16px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.0133em;
+    color: #7f55f5;
+    @media (max-width: 900px) {
+      font-size: 16px;
+    }
+  }
+  & input {
+    padding: 16.5px 14px;
+    border-radius: 8px;
+    outline: 0;
+    box-shadow: inset 0px 4px 10px rgba(127, 85, 245, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0);
+    margin-bottom: 24px;
+    background-color: rgba(20, 16, 41, 0.02);
+    z-index: 1;
+    @media (max-width: 900px) {
+      margin-bottom: 16px;
+    }
+    &:hover,&:active,&:focus {
+        border: 1px solid #7f55f5;
+    }
+  }
+  & button {
+    width: inherit;
+    align-self: end;
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+  }
+  & p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.0133em;
+    color: #d9d9d9;
+    margin-bottom: 16px;
+    z-index: 1;
+    & > a {
+      color: #7f55f5;
+     
+    }
+    @media (max-width: 900px) {
+      font-size: 12px;
+    }
+  }
+
+  & a,
+  & button,
+  & input {
+    &:hover {
+      cursor: url("https://i.ibb.co/Pt29f40/pointer.png"), auto;
+    }
+  }
+}

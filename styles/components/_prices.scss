@@ -1,0 +1,115 @@
+.prices {
+  padding: 70px 0;
+  @media(max-width:900px) {
+    padding: 40px 0;
+  }
+  & .inner {
+    position: relative;
+    padding: 100px 50px 50px;
+    max-width: 900px;
+    margin: 0 auto;
+    @media(max-width:600px){
+        padding: 70px 20px 20px;
+    }
+    & .titles {
+      & > p {
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 37px;
+        color: #4579f5;
+        margin-bottom: 25px;
+
+        position: absolute;
+        top: 50px;
+        @media(max-width:600px){
+            font-size: 16px;
+            top: 20px;
+        }
+      }
+      & > p:nth-of-type(1) {
+        left: 200px;
+        @media(max-width:600px){
+            left: 50px;
+        }
+      }
+      & > p:nth-of-type(2) {
+        right: 150px;
+        @media(max-width:600px){
+            right: 30px;
+        }
+      }
+    }
+    & .card {
+      background: #fefefe;
+      box-shadow: 8px 8px 24px rgba(9, 13, 20, 0.09);
+      border-radius: 5px;
+      padding: 20px;
+      padding-right: 100px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @media(max-width:600px){
+          padding: 15px;
+      }
+      & .img {
+        background-color: #f0f0f0;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        @media(max-width:600px){
+            display: none;
+        }
+      }
+      & > div:nth-of-type(1) {
+        display: flex;
+        align-items: center;
+        & h3 {
+          font-weight: 600;
+          font-size: 25px;
+          line-height: 37px;
+          color: rgba(20, 16, 41, 0.8);
+          margin-left: 60px;
+          & > span {
+              font-size: 20px;
+          }
+          @media(max-width:600px){
+            margin-left: 20px;
+            font-size: 16px;
+            & > span {
+                font-size: 12px;
+            }
+        }
+        }
+      }
+      & > div:nth-of-type(2) {
+        & p {
+          font-weight: 600;
+          font-size: 25px;
+          line-height: 37px;
+          color: rgba(20, 16, 41, 0.8);
+          & > span {
+            font-size: 20px;
+            color: #4579f5;
+            margin-right: 8px;
+          }
+          @media (max-width: 600px){
+            font-size: 14px;
+            & > span {
+                margin-right: 4px;
+                font-size: 14px;
+            }
+        }
+        }
+      }
+    }
+    & .btn {
+        text-align: right;
+        & > button {
+            @media (min-width: 600px) {
+                width: inherit;
+            }
+        }
+    }
+  }
+}

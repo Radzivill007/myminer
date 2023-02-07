@@ -1,0 +1,37 @@
+.footer {
+  padding: 50px 0px;
+  background-color: #f5f7fa;
+  & h3 {
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.23em;
+    letter-spacing: 1px;
+    color: #383a3d;
+  }
+  & ul {
+    text-decoration: none !important;
+    list-style: none;
+    & svg {
+      fill: rgba(20,16,41,.6) !important;
+      margin-right: 8px;
+    }
+    & li {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 4px;
+      line-height: 1.71em;
+      letter-spacing: normal;
+      color: rgba(20,16,41,.6);
+      & a {
+        color: rgba(20,16,41,.6);
+        text-decoration: none;
+      }
+    }
+    & .with-svg {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
